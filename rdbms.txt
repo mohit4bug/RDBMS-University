@@ -1,0 +1,41 @@
+To create a user - create user mohit(username) identified by mohit123(password);
+To Give Connect permission - grant connect to mohit(username);
+To Give table creation permission - grant create table to mohit(username);
+To Give unlimited table creation permission - grant unlimited tablespace to mohit(username);
+To Make user DBA - grant dba to mohit(username)
+To see Output on screen - set serveroutput on;
+
+=========> if else in DBMS
+declare
+operation char:=&operation;
+a number:=&a;
+b number:=&b;
+begin
+if operation='m' then
+	dbms_output.put_line('Multiplication is '||a*b);
+elsif operation='d' then
+	dbms_output.put_line('Division is '||a/b);
+elsif operation='s' then
+	dbms_output.put_line('Subtraction is '||a-b);
+elsif operation='a' then
+	dbms_output.put_line('Addition is '||a+b);
+end if;
+end;
+/
+
+
+
+// Stored procedure
+
+declare --> X (this time no declare)
+create or replace procedure <procedure name> is/as
+<variable declaration>
+Begin 
+<statements & calculation/print>
+end;
+
+// execute this stored procedure
+
+exec <procedure name>
+or
+execute <procedure name>

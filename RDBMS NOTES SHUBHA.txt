@@ -1,0 +1,39 @@
+procedure ->
+1) open -> direct run
+2) closed -> we have to execute first 
+
+
+open ->
+declare
+begin 
+end
+
+
+closed ->
+create or replace procedure procName is
+begin
+end
+
+
+// Parameters with closed procedure
+create or replace procedure addProc (a in number , b in number) is
+result number:=a+b;
+begin
+dbms_output.put_line('My sum is '|| result);
+end;
+
+
+
+
+
+functions ->
+
+create or replace function calc 
+return number is
+
+begin
+
+end
+
+// we can call any function in procedure
+

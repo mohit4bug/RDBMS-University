@@ -1,0 +1,17 @@
+//copy the data of procedure in sql file in any drive and
+//save is as .sql extension
+
+//now open cmd
+//direct to your .sql file directory
+
+wrap iname=filename.sql oname=filename.plb
+
+now plb file is created
+
+go to oracle sql plus
+
+@s:/filename.plb
+
+procedure created 
+
+now exec procName

@@ -1,0 +1,6 @@
+create or replace procedure st_calc as
+begin
+update st_marks set total = (m1+m2+m3+m4)/4;
+update st_marks set percentage = (total/100)*100;
+end;
+/

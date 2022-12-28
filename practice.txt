@@ -1,0 +1,5 @@
+wrapping -> package
+
+iname = <filename>.sql
+oname = <filename>.plb
+
